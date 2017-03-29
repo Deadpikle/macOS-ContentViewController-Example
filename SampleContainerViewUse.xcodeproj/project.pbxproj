@@ -14,6 +14,9 @@
 		3489C7E61E8C13810097FC10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3489C7E41E8C13810097FC10 /* Main.storyboard */; };
 		3489C7F11E8C13820097FC10 /* SampleContainerViewUseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3489C7F01E8C13820097FC10 /* SampleContainerViewUseTests.m */; };
 		3489C7FC1E8C13820097FC10 /* SampleContainerViewUseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3489C7FB1E8C13820097FC10 /* SampleContainerViewUseUITests.m */; };
+		3489C80B1E8C14960097FC10 /* ContentManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3489C80A1E8C14960097FC10 /* ContentManagerViewController.m */; };
+		3489C80E1E8C19450097FC10 /* SegueBetweenEmbedded.m in Sources */ = {isa = PBXBuildFile; fileRef = 3489C80D1E8C19450097FC10 /* SegueBetweenEmbedded.m */; };
+		3489C8111E8C1AA30097FC10 /* BackForwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3489C8101E8C1AA30097FC10 /* BackForwardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,12 @@
 		3489C7F71E8C13820097FC10 /* SampleContainerViewUseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleContainerViewUseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3489C7FB1E8C13820097FC10 /* SampleContainerViewUseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleContainerViewUseUITests.m; sourceTree = "<group>"; };
 		3489C7FD1E8C13820097FC10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3489C8091E8C14960097FC10 /* ContentManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentManagerViewController.h; sourceTree = "<group>"; };
+		3489C80A1E8C14960097FC10 /* ContentManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentManagerViewController.m; sourceTree = "<group>"; };
+		3489C80C1E8C19450097FC10 /* SegueBetweenEmbedded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegueBetweenEmbedded.h; sourceTree = "<group>"; };
+		3489C80D1E8C19450097FC10 /* SegueBetweenEmbedded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegueBetweenEmbedded.m; sourceTree = "<group>"; };
+		3489C80F1E8C1AA30097FC10 /* BackForwardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackForwardViewController.h; sourceTree = "<group>"; };
+		3489C8101E8C1AA30097FC10 /* BackForwardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackForwardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,12 @@
 			children = (
 				3489C7D91E8C13810097FC10 /* AppDelegate.h */,
 				3489C7DA1E8C13810097FC10 /* AppDelegate.m */,
+				3489C80F1E8C1AA30097FC10 /* BackForwardViewController.h */,
+				3489C8101E8C1AA30097FC10 /* BackForwardViewController.m */,
+				3489C8091E8C14960097FC10 /* ContentManagerViewController.h */,
+				3489C80A1E8C14960097FC10 /* ContentManagerViewController.m */,
+				3489C80C1E8C19450097FC10 /* SegueBetweenEmbedded.h */,
+				3489C80D1E8C19450097FC10 /* SegueBetweenEmbedded.m */,
 				3489C7DF1E8C13810097FC10 /* ViewController.h */,
 				3489C7E01E8C13810097FC10 /* ViewController.m */,
 				3489C7E21E8C13810097FC10 /* Assets.xcassets */,
@@ -271,7 +286,10 @@
 			files = (
 				3489C7E11E8C13810097FC10 /* ViewController.m in Sources */,
 				3489C7DE1E8C13810097FC10 /* main.m in Sources */,
+				3489C80B1E8C14960097FC10 /* ContentManagerViewController.m in Sources */,
+				3489C8111E8C1AA30097FC10 /* BackForwardViewController.m in Sources */,
 				3489C7DB1E8C13810097FC10 /* AppDelegate.m in Sources */,
+				3489C80E1E8C19450097FC10 /* SegueBetweenEmbedded.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -401,7 +419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};

@@ -7,9 +7,17 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ContentManagerViewController.h"
 
-@interface ViewController : NSViewController
+@class ContentManagerViewController;
 
+@protocol ContentManagerViewControllerHolder <NSObject>
+
+-(ContentManagerViewController*)retreiveContentManagerController;
+
+@end
+
+@interface ViewController : NSViewController <ContentManagerViewControllerHolder>
 
 @end
 
