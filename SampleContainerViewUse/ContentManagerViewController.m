@@ -11,8 +11,6 @@
 
 @interface ContentManagerViewController ()
 
-@property (weak) IBOutlet NSView *subViewControllerManager;
-
 @property NSViewController *currentViewController;
 @property NSMutableArray<NSViewController*> *viewControllerStack;
 
@@ -20,10 +18,27 @@
 
 @implementation ContentManagerViewController
 
+-(instancetype)init {
+    self = [super init];
+    self.viewControllerStack = [NSMutableArray array];
+    return self;
+}
+
+-(instancetype)initWithCoder:(NSCoder *)coder {
+    self = [super initWithCoder:coder];
+    self.viewControllerStack = [NSMutableArray array];
+    return self;
+}
+
+-(instancetype)initWithNibName:(NSNibName)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self.viewControllerStack = [NSMutableArray array];
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
-	self.viewControllerStack = [NSMutableArray array];
 }
 
 -(void)showViewController:(NSViewController*)viewController {
